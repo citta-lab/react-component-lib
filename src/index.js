@@ -1,9 +1,4 @@
-import React from 'react';
+import { Button } from './button/Button';
+import { MapList } from './map/MapList';
+import { Instruction } from './instruction/Instruction';
 
-class Welcome extends React.Component {
-    render() {
-        return <h1>Hello, there</h1>;
-    }
-}
-
-export default Welcome;
