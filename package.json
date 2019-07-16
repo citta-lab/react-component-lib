@@ -2,11 +2,65 @@
   "name": "react-component-lib",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
+  "description": "react-component-lib",
+  "main": "./lib/index.js",
+  "repository": "",
+  "author": "citta-lab",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "registry": ""
+  },
+  "devDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^23.0.1",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-array-includes": "^2.0.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-react-intl": "^2.0.3",
+    "enzyme-to-json": "^3.3.1",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "fetch-mock": "^7.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.1.0",
+    "jest-environment-jsdom": "^23.1.0",
+    "jest-environment-jsdom-global": "^1.1.0",
+    "jest-fetch-mock": "^1.6.5",
+    "webpack-dev-server": "^3.1.9"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "npm-cache",
+      ".npm",
+      ".cache"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/.jest/setup.js",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "testEnvironment": "jest-environment-jsdom-global",
+    "testPathIgnorePatterns": [
+      "/lib/"
+    ]
   }
 }
