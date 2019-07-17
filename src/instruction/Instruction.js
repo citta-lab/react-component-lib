@@ -1,9 +1,5 @@
 import React from 'react';
 
-class Instruction extends React.Component {
-    render() {
-        return <h1>Hello, there</h1>;
-    }
-}
+const Instruction = () => <div><h1>Hello, there</h1></div>;
 
 export default Instruction;

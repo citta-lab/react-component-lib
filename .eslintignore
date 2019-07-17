@@ -1,0 +1,8 @@
+node_modules/
+coverage/
+public/
+scripts/
+lib
+target/
+vendor/
+**/build/
