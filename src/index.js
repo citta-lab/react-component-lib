@@ -1,3 +1,3 @@
-import { Button } from './button/Button';
-import { MapList } from './map/MapList';
-import { Instruction } from './instruction/Instruction';
+export { default as Button } from './button/Button';
+export { default as MapList } from './map/MapList';
+export { default as Instruction } from './instruction/Instruction';

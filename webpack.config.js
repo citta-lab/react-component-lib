@@ -16,11 +16,14 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
         options: {
-          presets: ['babel-preset-env', 'babel-preset-react'],
+          presets: ['@babel/preset-env', '@babel/preset-react'],
           plugins: [
             'array-includes',
-            'transform-object-rest-spread',
-            'transform-class-properties',
+            '@babel/plugin-transform-object-assign',
+            '@babel/plugin-proposal-object-rest-spread',
+            '@babel/plugin-transform-runtime',
+            '@babel/plugin-syntax-dynamic-import',
+            '@babel/plugin-proposal-class-properties',
           ],
         },
       },
