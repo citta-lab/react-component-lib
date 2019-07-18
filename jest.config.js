@@ -7,22 +7,22 @@
 
 
 module.exports = {
-    verbose: false,
-    modulePathIgnorePatterns: [
-        'npm-cache',
-        '.npm',
-        '.cache',
-    ],
-    setupTestFrameworkScriptFile: '<rootDir>/.jest/setupTests.js',
-    snapshotSerializers: [
-        'enzyme-to-json/serializer',
-    ],
-    moduleNameMapper: {
-        '\\.(css|less|scss)$': 'identity-obj-proxy',
-    },
-    testEnvironment: 'jest-environment-jsdom-global',
-    testPathIgnorePatterns: [
-        '/lib/',
-        '/node_modules',
-    ],
+  verbose: false,
+  modulePathIgnorePatterns: [
+    'npm-cache',
+    '.npm',
+    '.cache',
+  ],
+  setupTestFrameworkScriptFile: '<rootDir>/.jest/setupTests.js',
+  snapshotSerializers: [
+    'enzyme-to-json/serializer',
+  ],
+  moduleNameMapper: {
+    '\\.(css|less|scss)$': 'identity-obj-proxy',
+  },
+  testEnvironment: 'jest-environment-jsdom-global',
+  testPathIgnorePatterns: [
+    '/lib/',
+    '/node_modules',
+  ],
 };
